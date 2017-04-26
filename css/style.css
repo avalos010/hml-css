@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+body {
+  font-size: 16px;
+  background: linear-gradient(to top, #fff,#32CD32)
+    
+}
+p {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'News Cycle', sans-serif;
+  line-height: 1.5;
+  letter-spacing: .8px;
+}
+
+/* ================HEADER =======================
+================================================= */
+.main-header h1 {
+  text-align: center;
+  text-shadow: 2px 3px 5px white;
+}
+h2 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+ nav {
+  display: block;
+  text-align: center;
+  margin-right: 40px;
+}
+nav ul li {
+  list-style: none;
+  text-align: center;
+  padding: 6px;
+  border: 3px solid black;
+  background: white;
+  display: inline-block;
+  border-radius: 10px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* ================jumbotron  =======================
+================================================= */
+.color-row {
+  background: gray;
+  height: 400px;
+  background: linear-gradient(to top, transparent,#000),
+    url(http://shared-blog.kddi-web.com/sites/default/files/html5.png) center no-repeat;
+  background-size: 90%;
+  box-shadow: 0 5px 5px #fff;
+  overflow: 
+}
+
+.color-row img{
+    width: 30%;
+    padding: 15px;
+    margin-top: 10px;
+}
+/* ================main =======================
+================================================= */
+.html,.css,.javascript {
+  padding: 20px;
+  box-shadow: 0 2px 3px #fff;
+}
+footer {
+  text-align: center;
+  background: gray;
+  height: 25px;
+}
+
+/* ================Mediaqueries=======================
+================================================= */
+
+@media screen and (min-width: 769px) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+   }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    background: #000;
+    border: white;
+    font-size: 1.6em;
+    padding-right: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  ul li a {
+    color: #fff;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+  }
+  .col {
+    flex: 1 410px;
+  }
+  .html,.css,.javascript {
+  box-shadow:none;
+}
+  body {
+    background: linear-gradient(to bottom,#D4AF37,#fff);
+  }
+  .color-row {
+    background-size:70%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  nav {
+    display: none;
+  }
+  .color-row {
+    height: 600px;
+    background-size:80%;
+  }
+  body {
+    background:linear-gradient(to top,#fff,#ffd204);
+  }
+  .main-header h1 {
+    font-size: 2.6em;
+  }
+  .container
+  max-width: 1024px;
+}
